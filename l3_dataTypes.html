@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // let name ="Alex";
+    //
+    // alert(`Salut ${name}`);
+    // alert(`Asta este un numar ${123456789}`);
+    // alert(`Asta este un numar ${"name"}`);
+    // alert('Un mic test\'aici');
+    // const bigmouth = 'I\'ve got no right to take my place…';
+    // console.log(bigmouth);
+
+    let text = "Helloworld!"
+    //Nu este nevoie aici neaparat de o alta variabila
+    // let lungime = text.length;
+    console.log(text.length);
+
+    console.log("Extrage caracterul de la pozitia mentionata");
+    console.log(text.charAt(0));
+
+    console.log("Extrage caracterul de la pozitia mentionata JS 2022");
+    console.log(text.at(1));
+    console.log("Acelasi lucru ca mai sus");
+    console.log(text[1]);
+
+    console.log("Extrage caracterele de la pozitia x pana la pozitia y");
+    console.log(text.slice(1, 5)); //ello
+    console.log("Daca nu punem al doilea parametru, extrage tot de la pozitia x")
+    console.log(text.slice(1));
+
+    console.log("Upper case");
+    console.log(text.toUpperCase());
+
+    console.log("Lower case");
+    console.log(text.toLowerCase());
+
+    console.log("Eliminarea spatiilor inainte si dupa, spatii inutile")
+    let text2 = "    Hello world!   ";
+    console.log(text2.trim());
+
+    console.log("Adauga al doilea parametru pana cand stringul ajunge la lungimea mentionata {primul parametru}")
+    console.log(text.padStart(12, "x"));
+
+    console.log("Idem mai sus doar ca pentru numere")
+    let number = "5";
+    let padded = number.padStart(4,"0");
+    console.log(padded);
+
+
+</script>
+
+</body>
+</html>
