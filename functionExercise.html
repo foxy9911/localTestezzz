@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions</title>
+</head>
+<body>
+
+<script>
+    function add7(a){
+        return a + 7;
+    }
+    console.log(add7(7));
+
+    function multiply(x,y){
+        return x * y;
+    }
+    console.log(multiply(2,3));
+
+    //Metoda 1
+    function capitalize(string){
+        string = string.toLowerCase();
+        let firstLetter = string.charAt(0);
+        firstLetter = firstLetter.toUpperCase();
+
+        return firstLetter + string.slice(1);
+    }
+    console.log(capitalize("TEXT"));
+
+    //Metoda 2
+    function capitalizev2(string){
+        string = string.toLowerCase();
+        let firstLetter = string.charAt(0);
+        firstLetter = firstLetter.toUpperCase();
+
+        return string.replace(string[0], firstLetter);
+    }
+    console.log(capitalizev2("SHIT"));
+
+
+    function lastLetter(string){
+        let count = string.length - 1;
+        let lastLetter = string.charAt(count)
+        return lastLetter;
+        // alert(count);
+    }
+    console.log(lastLetter("cacat si pisat"));
+</script>
+
+</body>
+</html>
